@@ -2,8 +2,8 @@ import { BigHead } from "@bigheads/core";
 
 export const Avatar = () => (
   <BigHead
-    accessory="roundGlasses"
-    body="breasts"
+    accessory="none"
+    body="chest"
     circleColor="blue"
     clothing="shirt"
     clothingColor="white"
@@ -11,16 +11,16 @@ export const Avatar = () => (
     eyes="happy"
     faceMask
     faceMaskColor="green"
-    facialHair="none3"
+    facialHair="none"
     graphic="none"
     hair="afro"
     hairColor="black"
-    hat="beanie"
+    hat="none"
     hatColor="black"
     lashes={false}
     lipColor="purple"
-    mask
+    mask={false}
     mouth="open"
-    skinTone="brown"
+    skinTone="light"
   />
 );

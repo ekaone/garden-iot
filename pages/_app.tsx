@@ -8,6 +8,7 @@ import { PageWrapper } from "../components/page-wrapper";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 
+// pre-defined styles for motion
 const MotionBox = motion.custom<BoxProps>(Box);
 
 const App = ({ Component, pageProps, router }: AppProps) => {
@@ -35,7 +36,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-
+      {/** lock color mode */}
       <DarkMode>
         <PageWrapper>
           <Header />
