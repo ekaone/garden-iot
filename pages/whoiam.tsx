@@ -37,21 +37,17 @@ const skills = [
       "Cypress",
     ],
   },
-  {
-    title: "Miscellaneous",
-    knowledge: [
-      "Web Accessibility",
-      "SCRUM & Agile Work",
-      "GraphQL & Rest",
-      "Figma & Sketch",
-    ],
-  },
 ];
 
 export const AboutPage = () => {
   return (
     <>
-      <SectionHeadline>Hallo, I am Eka.</SectionHeadline>
+      <SectionHeadline>
+        Hallo, I am Eka{" "}
+        <span role="img" aria-label="waving hand">
+          👋
+        </span>
+      </SectionHeadline>
       <Flex direction={["column", "column", "row"]} mb={{ base: 12, md: 0 }}>
         <Stack spacing={6} maxW={"2xl"} order={[2, 2, 1]}>
           <Text fontSize={"xl"} as={"em"}>
@@ -63,7 +59,7 @@ export const AboutPage = () => {
             <Link href={"https://github.com/ekaone/"}>
               contribute to open source projects
             </Link>
-            , read widely and try new things
+            , also read widely and try new things
           </Text>
         </Stack>
         <Box minW={300} mx={"auto"} mb={{ base: 12, md: 0 }} order={[1, 1, 2]}>

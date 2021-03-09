@@ -8,7 +8,10 @@ export const HeroSection = () => {
   return (
     <Section>
       <Heading as="h1" size="2xl" mb={8}>
-        Hallo
+        Hi there{" "}
+        <span role="img" aria-label="smile">
+          😀
+        </span>
       </Heading>
       <Stack spacing={3} maxW={"5xl"} mb={12}>
         <Text

@@ -1,4 +1,3 @@
-import { GetStaticProps, NextPage } from "next";
 import {
   Text,
   Alert,

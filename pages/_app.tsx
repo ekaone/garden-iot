@@ -6,7 +6,7 @@ import Head from "next/head";
 import { theme } from "../theme";
 import { PageWrapper } from "../components/page-wrapper";
 import { Header } from "../components/header";
-// import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer";
 
 const MotionBox = motion.custom<BoxProps>(Box);
 
@@ -54,6 +54,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               }}
             >
               <Component {...pageProps} />
+              <Footer />
             </MotionBox>
           </AnimatePresence>
         </PageWrapper>
