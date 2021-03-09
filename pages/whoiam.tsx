@@ -21,7 +21,12 @@ const skills = [
   },
   {
     title: "Frontend",
-    knowledge: ["React", "Next.js", "Tailwind CSS", "CSS in JS"],
+    knowledge: ["React", "Next.js", "Gatsby.js", "Hugo"],
+  },
+  ,
+  {
+    title: "Design",
+    knowledge: ["CSS", "Chakra UI", "Tailwind CSS", "CSS in JS"],
   },
   {
     title: "Testing",
@@ -58,7 +63,7 @@ export const AboutPage = () => {
             <Link href={"https://github.com/ekaone/"}>
               contribute to open source projects
             </Link>
-            , doing some further education like
+            , read widely and try new things
           </Text>
         </Stack>
         <Box minW={300} mx={"auto"} mb={{ base: 12, md: 0 }} order={[1, 1, 2]}>
