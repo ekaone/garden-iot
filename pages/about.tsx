@@ -6,6 +6,7 @@ import {
   AlertTitle,
   AlertDescription,
   Stack,
+  Link,
 } from "@chakra-ui/react";
 
 import { SectionHeadline } from "../components/section-headline";
@@ -19,14 +20,37 @@ export const WhoIAm = () => {
         Here are some of short description about Garden IoT.
       </Text>
 
-      <Stack spacing={12}>
+      <Stack spacing={5}>
         <Alert status="success" rounded={"md"}>
           <AlertIcon />
           <Box flex="1">
-            <AlertTitle>Next.js Tip!</AlertTitle>
+            <AlertTitle>Monitoring!</AlertTitle>
             <AlertDescription display="block">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-              sint, dolor laboriosam hic saepe facilis ✌️
+              Garden IoT use{" "}
+              <Link
+                href="https://www.raspberrypi.org/"
+                color={"brandGreen.500"}
+                target="_blank"
+              >
+                Raspberry PI{" "}
+              </Link>
+              as controller interface{" "}
+              <span role="img" aria-label="pc">
+                💻
+              </span>
+            </AlertDescription>
+          </Box>
+        </Alert>
+        <Alert status="success" rounded={"md"}>
+          <AlertIcon />
+          <Box flex="1">
+            <AlertTitle>Devices!</AlertTitle>
+            <AlertDescription display="block">
+              You can use detect Button trigger from raspberry PI, Temperature,
+              Stepper motor and so on{" "}
+              <span role="img" aria-label="custom">
+                🛠
+              </span>
             </AlertDescription>
           </Box>
         </Alert>

@@ -33,6 +33,25 @@ export const Navigation = ({ ...restProps }: BoxProps) => {
           </Link>
         </NextLink>
       ))}
+      <NextLink key="/started" href="/started" passHref={true}>
+        <Link
+          border="1px"
+          px={2}
+          py={2}
+          rounded={"md"}
+          color="brandGreen.500"
+          _hover={{
+            textDecoration: "none",
+            bgGradient: "linear(to-l, #7928CA, #FF0080)",
+          }}
+          css={{ transition: "all 0.3s ease-in-out" }}
+          bg={pathname === "/started" ? "gray.900" : "inherit"}
+          textTransform="uppercase"
+          fontWeight="bold"
+        >
+          Get Started
+        </Link>
+      </NextLink>
     </HStack>
   );
 };
