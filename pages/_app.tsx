@@ -2,6 +2,8 @@ import type { AppProps } from "next/app";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChakraProvider, DarkMode, Box, BoxProps } from "@chakra-ui/react";
 import Head from "next/head";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 
 import { theme } from "../theme";
 import { PageWrapper } from "../components/page-wrapper";
@@ -15,8 +17,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <ChakraProvider theme={theme} resetCSS={true}>
       <Head>
-        <title>Garden IoT</title>
-        <meta name={"description"} content={"Garden IoT"} />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -34,8 +35,8 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <DefaultSeo {...SEO} />
       {/** lock color mode */}
       <DarkMode>
         <PageWrapper>
