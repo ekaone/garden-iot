@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Heading, Text, Link, Stack, Box, Button } from "@chakra-ui/react";
+import { Heading, Text, Link, Stack, Button } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
 
 import { Section } from "./section";
