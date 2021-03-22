@@ -1,12 +1,29 @@
 {
-  "name": "top10-garden-iot",
-  "version": "0.1.0",
-  "private": true,
+  "name": "garden-iot",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekaone/garden-iot.git"
+  },
+  "keywords": [
+    "garden iot",
+    "iot",
+    "eka",
+    "prasetia",
+    "dannyeka",
+    "monitoring"
+  ],
+  "author": "Eka Prasetia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ekaone/garden-iot/issues"
+  },
+  "homepage": "https://garden-iot-eka.vercel.app/",
   "dependencies": {
     "@bigheads/core": "^0.3.1",
     "@chakra-ui/react": "^1.3.4",

@@ -1,3 +1,5 @@
+import NextLink from "next/link";
+import { MdArrowForward } from "react-icons/md";
 import {
   Text,
   Alert,
@@ -7,11 +9,12 @@ import {
   AlertDescription,
   Stack,
   Link,
+  Button,
 } from "@chakra-ui/react";
 
 import { SectionHeadline } from "../components/section-headline";
 
-export const WhoIAm = () => {
+const WhoIAm = () => {
   return (
     <>
       <SectionHeadline>Garden IoT</SectionHeadline>
@@ -51,6 +54,29 @@ export const WhoIAm = () => {
               <span role="img" aria-label="custom">
                 🛠
               </span>
+            </AlertDescription>
+          </Box>
+        </Alert>
+        <Alert status="success" rounded={"md"}>
+          <AlertIcon />
+          <Box flex="1">
+            <AlertTitle>Try!</AlertTitle>
+            <AlertDescription display="flex" alignItems="center">
+              Try your own Garden IoT{" "}
+              <NextLink href={"/started"} passHref={true}>
+                <Button
+                  as={Link}
+                  marginLeft="10px"
+                  variant={"outline"}
+                  rightIcon={<MdArrowForward />}
+                  _hover={{
+                    textDecoration: "none",
+                    bgGradient: "linear(to-l, #7928CA, #FF0080)",
+                  }}
+                >
+                  Get Started
+                </Button>
+              </NextLink>
             </AlertDescription>
           </Box>
         </Alert>

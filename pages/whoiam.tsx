@@ -43,15 +43,21 @@ export const AboutPage = () => {
   return (
     <>
       <SectionHeadline>
-        Hallo, I am Eka{" "}
+        Hello, I am Eka{" "}
         <span role="img" aria-label="waving hand">
           👋
         </span>
       </SectionHeadline>
       <Flex direction={["column", "column", "row"]} mb={{ base: 12, md: 0 }}>
         <Stack spacing={6} maxW={"2xl"} order={[2, 2, 1]}>
-          <Text fontSize={"xl"} as={"em"}>
-            I design and build Web Development from Indonesia.
+          <Text
+            fontSize={"xl"}
+            as={"em"}
+            bgGradient="linear(to-l, #7928CA,#FF0080)"
+            bgClip="text"
+            fontWeight="extrabold"
+          >
+            I design and build Fullstack Development from Indonesia.
           </Text>
 
           <Text fontSize={"lg"}>

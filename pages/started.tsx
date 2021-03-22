@@ -14,7 +14,7 @@ import { SectionHeadline } from "../components/section-headline";
 const Started = () => {
   return (
     <>
-      <SectionHeadline>IoT Dashboard</SectionHeadline>
+      <SectionHeadline>Prerequisite</SectionHeadline>
 
       <Text mb={3} fontSize={"lg"}>
         Configuration steps.

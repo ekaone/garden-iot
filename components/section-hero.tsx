@@ -43,10 +43,12 @@ export const HeroSection = () => {
       <NextLink href={"/about"} passHref={true}>
         <Button
           as={Link}
-          data-splitbee-event="cta button clicked"
           variant={"outline"}
           rightIcon={<MdArrowForward />}
-          _hover={{ textDecoration: "none", bg: "gray.700" }}
+          _hover={{
+            textDecoration: "none",
+            bgGradient: "linear(to-l, #7928CA, #FF0080)",
+          }}
         >
           Learn more about Garden IoT
         </Button>
