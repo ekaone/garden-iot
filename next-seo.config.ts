@@ -13,7 +13,7 @@ const SEO = {
     description,
     images: [
       {
-        url: "https://garden-iot.vercel.app/static/banner.jpg",
+        url: "https://garden-iot-eka.vercel.app/static/banner.jpg",
         alt: title,
         width: 2240,
         height: 1260,
