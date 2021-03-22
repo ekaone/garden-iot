@@ -11,7 +11,7 @@ function Layout({ children, title }: PropsLayout) {
           rel="alternate"
           type="application/rss+xml"
           title="Garden IoT"
-          href="https://gardeniot.tech/site.xml"
+          href="https://garden-iot-eka.vercel.app/site.xml"
         />
         <title>Garden IoT - {title}</title>
       </Head>

@@ -13,7 +13,7 @@ const colors = {
 };
 
 const styles = {
-  global: ({ theme }) => ({
+  global: ({ theme }: { theme: any }) => ({
     html: {
       overflowY: "scroll",
     },

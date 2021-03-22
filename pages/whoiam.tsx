@@ -14,7 +14,14 @@ import { MdDone } from "react-icons/md";
 import { SectionHeadline } from "../components/section-headline";
 import { Avatar } from "../components/avatar";
 
-const skills = [
+interface SkillsType {
+  map: any;
+  title?: string | null;
+  knowledge?: string[] | null;
+}
+[];
+
+const skills: SkillsType = [
   {
     title: "Languages",
     knowledge: ["CSS & HTML", "JavaScript", "Typescript"],
@@ -81,13 +88,13 @@ export const AboutPage = () => {
           These are the things I know about or use.
         </Text>
         <SimpleGrid columns={[1, 2, 4]} spacing={10}>
-          {skills.map((skill) => (
+          {skills.map((skill: any) => (
             <Box key={skill.title}>
               <Text fontWeight={"bold"} mb={2}>
                 {skill.title}
               </Text>
               <List>
-                {skill.knowledge.map((k) => (
+                {skill.knowledge.map((k: any) => (
                   <ListItem key={k}>
                     <ListIcon as={MdDone} color={"brandGreen.500"} />
                     {k}
