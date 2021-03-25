@@ -6,9 +6,16 @@ import {
   AlertTitle,
   AlertDescription,
   Stack,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 import { SectionHeadline } from "../components/section-headline";
+import { Viewer } from "../components";
+
+const devices = [
+  { id: 1, name: "Temperature", data: "129" },
+  { id: 2, name: "Switch", data: "53" },
+];
 
 const Dashboard = () => {
   return (
@@ -35,6 +42,13 @@ const Dashboard = () => {
             </AlertDescription>
           </Box>
         </Alert>
+        <SimpleGrid columns={2} spacing={10}>
+          {devices.map((device) => (
+            <Box>
+              <Viewer name={device.name} data={device.data} />
+            </Box>
+          ))}
+        </SimpleGrid>
       </Stack>
     </>
   );
